@@ -16,7 +16,8 @@ def split_line(line: str) -> Optional[dict]:
         return None
     fields = m.groupdict()
     fields["pid"] = int(fields["pid"])
-    fields["block_ids"] = BLOCK_RE.findall(fields["content"])
+    # dédoublonné en conservant l'ordre : "Deleting block X file .../X" cite deux fois le même bloc
+    fields["block_ids"] = list(dict.fromkeys(BLOCK_RE.findall(fields["content"])))
     return fields
 
 

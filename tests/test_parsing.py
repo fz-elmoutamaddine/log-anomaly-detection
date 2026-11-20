@@ -96,3 +96,8 @@ def test_interrupted_packet_responder_is_a_separate_event():
     assert bad == 0
     assert ids[0] == ids[1]          # deux "terminating" : même événement
     assert ids[2] != ids[0]          # "Interrupted." : événement distinct
+
+def test_duplicate_block_ids_are_removed():
+    line = ("081109 203615 148 INFO dfs.FSDataset: Deleting block blk_-5 "
+            "file /mnt/hadoop/dfs/data/current/subdir3/blk_-5")
+    assert split_line(line)["block_ids"] == ["blk_-5"]
