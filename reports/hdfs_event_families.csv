@@ -1,0 +1,46 @@
+event_id,family_id,family_name,size,template
+1,1,Receiving block <BLK> src: /<IP> dest: /<IP>,1723232,Receiving block <BLK> src: /<IP> dest: /<IP>
+2,2,BLOCK* NameSystem.allocateBlock: <*> <BLK>,575061,BLOCK* NameSystem.allocateBlock: <*> <BLK>
+3,3,PacketResponder <NUM> for block <BLK> terminating,1706679,PacketResponder <NUM> for block <BLK> terminating
+4,4,Received block <BLK> of size <NUM> from /<IP>,1706514,Received block <BLK> of size <NUM> from /<IP>
+5,5,BLOCK* NameSystem.addStoredBlock: blockMap updated: <IP> is added to <BLK> size <NUM>,1719741,BLOCK* NameSystem.addStoredBlock: blockMap updated: <IP> is added to <BLK> size <NUM>
+6,6,Received block <BLK> src: /<IP> dest: /<IP> of size <NUM>,7097,Received block <BLK> src: /<IP> dest: /<IP> of size <NUM>
+7,7,<IP>:Transmitted block <BLK> to /<IP>,6937,<IP>:Transmitted block <BLK> to /<IP>
+8,8,<IP> Starting thread to transfer block <BLK> to <IP>,7002,<IP> Starting thread to transfer block <BLK> to <IP>
+9,9,BLOCK* ask <IP> to replicate <BLK> to datanode(s) <IP>,7002,BLOCK* ask <IP> to replicate <BLK> to datanode(s) <IP>
+10,10,<IP> Served block <BLK> to /<IP>,428726,<IP> Served block <BLK> to /<IP>
+11,11,Verification succeeded for <BLK>,120036,Verification succeeded for <BLK>
+12,12,writeBlock_exception,67,writeBlock <BLK> received exception <*>
+13,13,PacketResponder_exception,29,PacketResponder <BLK> <NUM> Exception <*>
+14,12,writeBlock_exception,3226,writeBlock <BLK> received exception java.io.IOException: Could not read from stream
+15,14,Deleting block <BLK> file <*>,1402047,Deleting block <BLK> file <*>
+16,15,Receiving empty packet for block <BLK>,1464,Receiving empty packet for block <BLK>
+17,16,receiveBlock_exception,75,Exception in receiveBlock for block <BLK> java.io.IOException: Connection reset by peer
+18,12,writeBlock_exception,75,writeBlock <BLK> received exception java.io.IOException: Connection reset by peer
+19,17,BLOCK* NameSystem.addStoredBlock: Redundant addStoredBlock request received for <BLK> on <IP> size <NUM>,975,BLOCK* NameSystem.addStoredBlock: Redundant addStoredBlock request received for <BLK> on <IP> size <NUM>
+20,13,PacketResponder_exception,22,PacketResponder <BLK> <NUM> Exception java.net.SocketTimeoutException: <NUM> millis timeout while waiting for channel to be ready for read. ch : java.nio.channels.SocketChannel[connected local=/<IP> remote=/<IP>]
+21,13,PacketResponder_exception,33,PacketResponder <BLK> <NUM> Exception java.io.InterruptedIOException: Interruped while waiting for IO on channel java.nio.channels.SocketChannel[connected local=/<IP> remote=/<IP>]. <NUM> millis timeout left.
+22,16,receiveBlock_exception,56,Exception in receiveBlock for block <BLK> <*>
+23,18,INTERRUPTED PacketResponder <NUM> for block <BLK> Interrupted.,49,INTERRUPTED PacketResponder <NUM> for block <BLK> Interrupted.
+24,19,Changing block file offset of block <BLK> from <NUM> to <NUM> meta file offset to <NUM>,65,Changing block file offset of block <BLK> from <NUM> to <NUM> meta file offset to <NUM>
+25,20,<IP>:Exception writing block <BLK> to mirror <IP>,34,<IP>:Exception writing block <BLK> to mirror <IP>
+26,16,receiveBlock_exception,16,Exception in receiveBlock for block <BLK> java.io.InterruptedIOException: Interruped while waiting for IO on channel java.nio.channels.SocketChannel[connected local=/<IP> remote=/<IP>]. <NUM> millis timeout left.
+27,12,writeBlock_exception,7,writeBlock <BLK> received exception java.io.InterruptedIOException: Interruped while waiting for IO on channel java.nio.channels.SocketChannel[connected local=/<IP> remote=/<IP>]. <NUM> millis timeout left.
+28,13,PacketResponder_exception,6,PacketResponder <BLK> <NUM> Exception java.io.IOException: Broken pipe
+29,12,writeBlock_exception,9,"writeBlock <BLK> received exception java.io.IOException: Block <BLK> is valid, and cannot be written to."
+30,21,<IP>:Failed to transfer <BLK> to <IP> got java.io.IOException: Connection reset by peer,9,<IP>:Failed to transfer <BLK> to <IP> got java.io.IOException: Connection reset by peer
+31,22,BLOCK* NameSystem.delete: <BLK> is added to invalidSet of <IP>,1396174,BLOCK* NameSystem.delete: <BLK> is added to invalidSet of <IP>
+32,23,Unexpected error trying to delete block <BLK>. BlockInfo not found in volumeMap.,5545,Unexpected error trying to delete block <BLK>. BlockInfo not found in volumeMap.
+33,24,BLOCK* NameSystem.addStoredBlock: addStoredBlock request received for <BLK> on <IP> size <NUM> But it does not belong to any file.,1288,BLOCK* NameSystem.addStoredBlock: addStoredBlock request received for <BLK> on <IP> size <NUM> But it does not belong to any file.
+34,25,<IP>:Got exception while serving <BLK> to /<IP>:,356207,<IP>:Got exception while serving <BLK> to /<IP>:
+35,13,PacketResponder_exception,13,PacketResponder <BLK> <NUM> Exception java.io.IOException: <*> <*> <*> <*>
+36,16,receiveBlock_exception,5,Exception in receiveBlock for block <BLK> java.net.SocketTimeoutException: <NUM> millis timeout while waiting for channel to be ready for write. ch : java.nio.channels.SocketChannel[connected local=/<IP> remote=/<IP>]
+37,12,writeBlock_exception,15,writeBlock <BLK> received exception java.net.SocketTimeoutException: <NUM> millis timeout while waiting for channel to be ready for <*> ch : java.nio.channels.SocketChannel[connected local=/<IP> remote=/<IP>]
+38,26,Reopen Block <BLK>,5,Reopen Block <BLK>
+39,27,BLOCK* Removing block <BLK> from neededReplications as it does not belong to any file.,4,BLOCK* Removing block <BLK> from neededReplications as it does not belong to any file.
+40,28,PendingReplicationMonitor timed out block <BLK>,47,PendingReplicationMonitor timed out block <BLK>
+41,12,writeBlock_exception,16,writeBlock <BLK> received exception java.io.IOException: <*> <*>
+42,13,PacketResponder_exception,5,PacketResponder <BLK> <NUM> Exception java.io.InterruptedIOException: Interruped while waiting for IO on channel java.nio.channels.SocketChannel[closed]. <NUM> millis timeout left.
+43,12,writeBlock_exception,1,writeBlock <BLK> received exception java.net.NoRouteToHostException: No route to host
+44,29,Adding an already existing block <BLK>,10,Adding an already existing block <BLK>
+45,16,receiveBlock_exception,3,Exception in receiveBlock for block <BLK> java.io.IOException: Broken pipe
